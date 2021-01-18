@@ -1,0 +1,124 @@
+:root {
+    --bg: #f8f8f8;
+    --primaryColor: #6d83f2;
+    --secondaryColor: #f8f8f8;
+    --accentColor: #c7d0ff;
+    --primaryBlack: #383838;
+    --primaryText: #383838;
+
+    --fontFamily: 'Montserrat', sans-serif;
+    --secondaryFontFamily: 'Karla', sans-serif;
+
+    --gradient: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
+    --gradient2: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+
+    font-size: calc(12px + 0.4vw);
+    font-family: var(--fontFamily);
+    -webkit-font-smoothing: antialiased;
+    font-display: fallback !important;
+    scrollbar-color: var(--primaryColor) white;
+    scrollbar-width: thin;
+}
+
+body {
+    /* overflow hidden for SmallProject's 100vw width div */
+    overflow-x: hidden;
+    background-color: var(--bg);
+    color: var(--primaryText);
+}
+
+a {
+    color: var(--primaryColor);
+    text-decoration: none;
+}
+a:hover {
+    color: var(--primaryText);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+    line-height: 140%;
+    color: var(--primaryText);
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+    line-height: 150%;
+    font-family: var(--secondaryFontFamily);
+    color: var(--primaryText);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    font-size: 14px;
+    line-height: 150%;
+}
+
+.invalid {
+    color: #e81b1b !important;
+    box-shadow: 0 0 0px 1px #e81b1b;
+}
+
+.active {
+    color: #383838;
+}
+
+hr {
+    border: 1px solid var(--accentColor);
+    margin: 30px 0;
+}
+
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 7px;
+    background-color: white;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+html::-moz-scrollbartrack-vertical {
+    background-color: white;
+}
+
+html::-moz-scrollbar {
+    width: 10px;
+    height: 7px;
+    background-color: white;
+    cursor: pointer;
+}
+
+html::-moz-scrollbarbutton-up {
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+}
+
+input[type='checkbox'] {
+    height: 0;
+    width: 0;
+    visibility: hidden;
+}

@@ -1,0 +1,14 @@
+.homeCard {
+    padding: 30px 35px;
+    border-radius: 10px;
+    background-color: var(--primaryColor);
+
+    box-shadow: 0px 18px 53px 0px rgba(0, 0, 0, 0.3);
+}
+.homeCard > pre {
+    font-size: 0.85rem;
+    line-height: 1.45rem;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
+    color: var(--bg);
+}
