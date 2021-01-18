@@ -21,7 +21,7 @@ function Contact() {
                         <input
                             className={errors._replyto && 'invalid'}
                             onChange={handleInput}
-                            value={formData.email}
+                            value={formData._replyto}
                             id="email"
                             name="_replyto"
                             type="email"
