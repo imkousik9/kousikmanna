@@ -6,7 +6,7 @@ import Projects from '../components/Projects';
 import Contact from '../components/Contact';
 import { GetStaticProps } from 'next';
 import { fetchEntries } from '../../utils/contentfulProjects';
-import Footer from '../components/Footer/Footer';
+import Footer from '../components/Footer';
 
 export const getStaticProps: GetStaticProps = async () => {
     const res = await fetchEntries();
