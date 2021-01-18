@@ -1,22 +1,16 @@
 import { useState } from 'react';
 
 const useForm = () => {
-    const [formData, setFormData] = useState<
-        | {
-              email: string;
-              name: string;
-              message: string;
-          }
-        | {}
-    >({});
-    const [errors, setErrors] = useState<
-        | {
-              _replyto: string;
-              name: string;
-              message: string;
-          }
-        | {}
-    >({});
+    const [formData, setFormData] = useState({
+        email: '',
+        name: '',
+        message: ''
+    });
+    const [errors, setErrors] = useState({
+        _replyto: '',
+        name: '',
+        message: ''
+    });
 
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     const nameRegex = /^[a-zA-Z\s]*[^\s]$/gim;
@@ -48,7 +42,7 @@ const useForm = () => {
         }
     }
 
-    const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const handleInput = (e) => {
         e.preventDefault();
         const { value, name } = e.target;
         // validate
