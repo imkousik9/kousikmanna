@@ -1,16 +1,17 @@
 import { useState } from 'react';
 
 const useForm = () => {
-    const [formData, setFormData] = useState({
-        _replyto: '',
-        name: '',
-        message: ''
-    });
-    const [errors, setErrors] = useState({
-        _replyto: '',
-        name: '',
-        message: ''
-    });
+    const [formData, setFormData] = useState<{
+        _replyto?: string;
+        name?: string;
+        message?: string;
+    }>({});
+
+    const [errors, setErrors] = useState<{
+        _replyto?: string;
+        name?: string;
+        message?: string;
+    }>({});
 
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     const nameRegex = /^[a-zA-Z\s]*[^\s]$/gim;
