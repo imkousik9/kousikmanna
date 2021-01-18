@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 const useForm = () => {
     const [formData, setFormData] = useState({
-        email: '',
+        _replyto: '',
         name: '',
         message: ''
     });
