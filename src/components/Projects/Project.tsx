@@ -14,7 +14,7 @@ const Project: React.FC<ProjectProps> = ({ title, image, url, githubRepo }) => {
     return (
         <div className={style.project}>
             <div className={style.project__imageContainer}>
-                <img className={style.project__image} src={image} alt="" />
+                <img className={style.project__image} src={image} alt={title} />
                 <div className={style.project__icons}>
                     <NextLink href={url}>
                         <a
