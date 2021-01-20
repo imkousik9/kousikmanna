@@ -15,7 +15,7 @@
     display: block;
 }
 
-.project__imgageContainer {
+.project__imageContainer {
     position: relative;
 }
 
@@ -34,7 +34,7 @@
     background: var(--gradient);
 }
 
-.project__iconsRoundedSqir {
+.project__iconsRoundedSquire {
     font-size: 12px;
     width: auto;
     height: auto;

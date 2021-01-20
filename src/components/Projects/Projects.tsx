@@ -15,7 +15,7 @@ function Projects({ projects }) {
                             title={project.title}
                             image={project.image.fields.file.url}
                             url={project.url}
-                            githuhRepo={project.gitHubRepository}
+                            githubRepo={project.gitHubRepository}
                         />
                     );
                 })}
