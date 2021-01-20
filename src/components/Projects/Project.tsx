@@ -18,7 +18,7 @@ const Project: React.FC<ProjectProps> = ({ title, image, url, githubRepo }) => {
                 <div className={style.project__icons}>
                     <NextLink href={url}>
                         <a
-                            target="__bank"
+                            target="_blank"
                             className={style.project__iconsRoundedSquire}
                         >
                             Live Demo
@@ -26,7 +26,7 @@ const Project: React.FC<ProjectProps> = ({ title, image, url, githubRepo }) => {
                     </NextLink>
                     <NextLink href={githubRepo}>
                         <a
-                            target="__bank"
+                            target="_blank"
                             className={style.project__iconsRound}
                         >
                             <FaGithub />
