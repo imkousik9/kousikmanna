@@ -22,7 +22,7 @@ export const getStaticProps: GetStaticProps = async () => {
         props: {
             projects
         },
-        revalidate: 60 * 60
+        revalidate: 200
     };
 };
 
@@ -30,7 +30,6 @@ export default function App({ projects }) {
     return (
         <div>
             <Head>
-                <title>Kousik Manna</title>
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
