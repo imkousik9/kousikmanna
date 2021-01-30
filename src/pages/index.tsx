@@ -29,10 +29,6 @@ export const getStaticProps: GetStaticProps = async () => {
 export default function App({ projects }) {
     return (
         <div>
-            <Head>
-                <link rel="icon" href="/favicon.ico" />
-            </Head>
-
             <Navbar />
             <Home />
             <About />
