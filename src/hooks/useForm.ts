@@ -1,17 +1,16 @@
+import { type } from 'os';
 import { useState } from 'react';
 
-const useForm = () => {
-    const [formData, setFormData] = useState<{
-        _replyto?: string;
-        name?: string;
-        message?: string;
-    }>({});
+export type stateType = {
+    _replyto: string;
+    name: string;
+    message: string;
+};
 
-    const [errors, setErrors] = useState<{
-        _replyto?: string;
-        name?: string;
-        message?: string;
-    }>({});
+const useForm = () => {
+    const [formData, setFormData] = useState({} as stateType);
+
+    const [errors, setErrors] = useState({} as stateType);
 
     const emailRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
     const nameRegex = /^[a-zA-Z\s]*[^\s]$/gim;
