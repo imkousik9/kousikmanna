@@ -15,17 +15,23 @@ function HomeCard() {
                 3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; const [trait , setTrait ] =
                 useState('')
             </pre>
-            <pre>4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (</pre>
             <pre>
-                5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setName("
+                4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setName("
                 <strong>Kousik Manna</strong>");
             </pre>
             <pre>
-                6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setTrait("
+                5&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; setTrait("
                 <strong>WEB DEVELOPER</strong>");
             </pre>
-            <pre>8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</pre>
-            <pre>9&nbsp;&nbsp;{'}'}</pre>
+            <pre>6&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; return (</pre>
+            <pre>7&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {'<>'}</pre>
+            <pre>
+                8&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                {'<p>{name trait}</p>'}
+            </pre>
+            <pre>9&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {'</>'}</pre>
+            <pre>10&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; )</pre>
+            <pre>11&nbsp;&nbsp;{'}'}</pre>
         </div>
     );
 }
