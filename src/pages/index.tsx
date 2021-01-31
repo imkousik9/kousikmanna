@@ -1,26 +1,18 @@
-import Head from 'next/head';
+import { GetStaticProps } from 'next';
+import { fetchProjects } from '../lib/api';
 import Navbar from '../components/Navbar';
 import Home from '../components/Home';
 import About from '../components/About';
 import Projects from '../components/Projects';
 import Contact from '../components/Contact';
-import { GetStaticProps } from 'next';
-import { fetchEntries } from '../../utils/contentfulProjects';
 import Footer from '../components/Footer';
 
 export const getStaticProps: GetStaticProps = async () => {
-    const res = await fetchEntries();
-    const projectsOnly = await res.filter(
-        (p) => p.sys.contentType.sys.id === 'projects'
-    );
-
-    const projects = await projectsOnly.map((p) => {
-        return p.fields;
-    });
+    const projects = await fetchProjects();
 
     return {
         props: {
-            projects
+            projects: projects.data.projectsCollection.items
         },
         revalidate: 200
     };

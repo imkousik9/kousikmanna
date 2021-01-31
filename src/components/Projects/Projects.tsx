@@ -1,5 +1,3 @@
-import { GetStaticProps } from 'next';
-import { fetchEntries } from '../../../utils/contentfulProjects';
 import Project from './Project';
 import style from './Projects.module.css';
 
@@ -13,7 +11,7 @@ function Projects({ projects }) {
                         <Project
                             key={project.title}
                             title={project.title}
-                            image={project.image.fields.file.url}
+                            image={project.image.url}
                             url={project.url}
                             githubRepo={project.gitHubRepository}
                         />
