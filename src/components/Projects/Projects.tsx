@@ -1,4 +1,3 @@
-import { projectPropsType } from '../../pages';
 import Project from './Project';
 import style from './Projects.module.css';
 
@@ -7,7 +6,7 @@ function Projects({ projects }) {
         <section id="projects" className={style.projects}>
             <h2>Projects</h2>
             <div className={style.projects__list}>
-                {projects?.map((project: projectPropsType) => {
+                {projects?.map((project) => {
                     return (
                         <Project
                             key={project.title}
