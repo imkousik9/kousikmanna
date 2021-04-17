@@ -1,6 +1,9 @@
 const query = `query {
     projectsCollection {
       items {
+        sys {
+          id
+        }
           title
           url
           gitHubRepository
@@ -12,6 +15,9 @@ const query = `query {
   }`;
 
 export type Items = {
+  sys: {
+    id: string;
+  };
   title: string;
   url: string;
   gitHubRepository: string;

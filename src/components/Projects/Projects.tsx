@@ -14,7 +14,7 @@ function Projects({ projects }: ProjectsListProps) {
         {projects?.map((project: Items) => {
           return (
             <Project
-              key={project.title}
+              key={project.sys.id}
               title={project.title}
               image={project.image.url}
               url={project.url}
