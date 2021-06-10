@@ -1,32 +1,37 @@
 .skill {
-    /* margin-bottom: 20px; */
+  /* margin-bottom: 20px; */
 }
 
 .skill > h2 {
-    margin: 100px auto;
-    font-size: 1.5rem;
-    font-weight: 900;
-    color: var(--primaryColor);
-    text-align: center;
-    letter-spacing: 1px;
+  margin: 100px auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 1px;
 }
 
 .skill__icons {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    color: var(--primaryColor);
-    font-size: 5rem;
-    padding: 20px 70px;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--primaryColor);
+  font-size: 5rem;
+  padding: 20px 70px;
+  margin-bottom: 15px;
 }
 
 .skill__icon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--primaryColor);
-    font-size: 5rem;
-    padding: 20px 70px;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primaryColor);
+  font-size: 5rem;
+  padding: 20px 70px;
+  margin-bottom: 30px;
+}
+
+.skill__icon > svg {
+  margin-left: 100px;
+  margin-right: 100px;
 }
