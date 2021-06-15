@@ -12,11 +12,6 @@
 .project:hover {
   transform: scale(1.07);
 }
-.project__image {
-  width: 350px;
-  height: 200px;
-  display: block;
-}
 
 .project__imageContainer {
   position: relative;
