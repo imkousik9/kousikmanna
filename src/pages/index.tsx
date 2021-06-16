@@ -1,4 +1,4 @@
-import { GetStaticProps, InferGetStaticPropsType } from 'next';
+import { InferGetStaticPropsType } from 'next';
 import { fetchProjects } from '../lib/api';
 import Navbar from '../components/Navbar';
 import Home from '../components/Home';
@@ -12,14 +12,14 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      projects: projects.data.projectsCollection.items
+      projects: projects.data.projectsCollection.items,
     },
-    revalidate: 200
+    revalidate: 200,
   };
 };
 
 export default function App({
-  projects
+  projects,
 }: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
