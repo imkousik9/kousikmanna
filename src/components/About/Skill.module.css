@@ -31,6 +31,8 @@
   margin-bottom: 30px;
 }
 
+/* TODO: need to fix icon resizing */
+
 .skill__icon > svg {
   margin-left: 100px;
   margin-right: 100px;
