@@ -1,7 +1,7 @@
 import React from 'react';
 import { FaPaperPlane } from 'react-icons/fa';
 import style from './Contact.module.css';
-import useForm from '../../hooks/useForm';
+import useForm from '../../lib/hooks/useForm';
 
 function Contact() {
   const { formData, errors, handleInput, isFormValid } = useForm();
