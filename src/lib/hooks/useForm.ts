@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { ChangeEvent, useState } from 'react';
 
 export type stateType = {
   _replyto: string;
@@ -42,10 +42,10 @@ const useForm = () => {
     }
   }
 
-  const handleInput = (e) => {
-    e.preventDefault();
+  const handleInput = (
+    e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { value, name } = e.target;
-    // validate
     validateInput(name, value);
     setFormData({ ...formData, [name]: value });
   };
