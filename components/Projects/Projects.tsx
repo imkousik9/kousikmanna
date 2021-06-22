@@ -1,4 +1,4 @@
-import { Items } from '../../lib/api';
+import { Items } from '@/lib/api';
 import Project from './Project';
 import style from './Projects.module.css';
 

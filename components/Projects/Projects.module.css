@@ -1,0 +1,21 @@
+.projects {
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+}
+
+.projects > h2 {
+  margin: 100px auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.projects__list {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+}

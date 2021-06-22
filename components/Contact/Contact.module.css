@@ -1,0 +1,112 @@
+.contact {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.contact > h2 {
+  margin: 100px auto;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--primaryColor);
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.contact__box {
+  width: 100%;
+  padding: 10px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 50px;
+  background: var(--gradient);
+  border-radius: 10px;
+}
+
+.contact__from {
+  width: 100%;
+  padding: 30px 30px;
+  background: var(--secondaryColor);
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
+  border-radius: 10px;
+  height: 450px;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas:
+    'email name'
+    'textarea textarea'
+    '. button';
+}
+.contact__from label span {
+  font-size: 0.85em;
+  color: #252525;
+}
+
+.contact__from .label__email {
+  grid-area: email;
+}
+.contact__from .label__name {
+  grid-area: name;
+}
+.contact__from .label__message {
+  grid-area: textarea;
+}
+.contact__from .submit__btn {
+  justify-self: end;
+  width: fit-content;
+  grid-area: button;
+}
+
+.contact__from input {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  border: none;
+  margin: 10px 0;
+  width: 100%;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+.contact__from textarea {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #eaeaea;
+  border: none;
+  margin: 10px 0;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+}
+
+.contact__from button {
+  width: 100px;
+  height: 40px;
+  background: var(--gradient);
+  color: #f8f8f8;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.2s;
+  font-size: 12px;
+  margin: 0px 0;
+  padding: 12px 12px;
+  border-radius: 5px;
+}
+
+.contact__from button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.contact__from button:hover {
+  color: #f8f8f8;
+  background: var(--gradient2);
+  transform: scale(1.05);
+  transition: 0.2s;
+}

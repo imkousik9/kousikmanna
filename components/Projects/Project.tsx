@@ -1,6 +1,5 @@
 import React from 'react';
 import NextLink from 'next/link';
-import Image from 'next/image';
 import style from './Project.module.css';
 import { FaGithub } from 'react-icons/fa';
 
@@ -15,7 +14,7 @@ const Project: React.FC<ProjectProps> = ({ title, image, url, githubRepo }) => {
   return (
     <div className={style.project}>
       <div className={style.project__imageContainer}>
-        <Image alt={title} src={image} width={350} height={200} />
+        <img className={style.project__image} src={image} alt={title} />
         <div className={style.project__icons}>
           <NextLink href={url}>
             <a target="_blank" className={style.project__iconsRoundedSquire}>
