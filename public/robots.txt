@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://kousikmanna.vercel.app/sitemap.xml
