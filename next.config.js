@@ -15,10 +15,9 @@ module.exports = {
 
 const ContentSecurityPolicy = `
   default-src 'self';  
-  script-src 'self' *.youtube.com *.twitter.com;  
-  style-src 'self' *.googleapis.com;
-  child-src *.youtube.com *.google.com *.twitter.com;
-  img-src blob: data:;
+  script-src 'self';  
+  style-src 'self' *.googleapis.com;  
+  img-src * blob: data:;
   media-src 'none';
   connect-src *;
   font-src 'self';
