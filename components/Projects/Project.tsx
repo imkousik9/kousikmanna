@@ -17,12 +17,20 @@ const Project: React.FC<ProjectProps> = ({ title, image, url, githubRepo }) => {
         <img className={style.project__image} src={image} alt={title} />
         <div className={style.project__icons}>
           <NextLink href={url}>
-            <a target="_blank" className={style.project__iconsRoundedSquire}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.project__iconsRoundedSquire}
+            >
               Live Demo
             </a>
           </NextLink>
           <NextLink href={githubRepo}>
-            <a target="_blank" className={style.project__iconsRound}>
+            <a
+              target="_blank"
+              rel="noopener noreferrer"
+              className={style.project__iconsRound}
+            >
               <FaGithub />
             </a>
           </NextLink>
