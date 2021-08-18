@@ -1,0 +1,21 @@
+name: Linting
+on: [push, pull_request]
+jobs:
+  lint:
+    name: ESLint
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: ⬇️ Checkout repo
+        uses: actions/checkout@v2
+
+      - name: ⎔ Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+
+      - name: 📥 Download deps
+        uses: borales/actions-yarn@v2.3.0
+
+      - name: Run ESLint
+        run: yarn lint

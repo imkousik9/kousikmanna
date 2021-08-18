@@ -16,7 +16,7 @@ module.exports = {
 const ContentSecurityPolicy = `
   default-src 'self';  
   script-src 'self';  
-  style-src 'self' *.googleapis.com;  
+  style-src 'self' 'unsafe-inline' *.googleapis.com;  
   img-src * blob: data:;
   media-src 'none';
   connect-src *;
