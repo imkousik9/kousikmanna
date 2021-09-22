@@ -1,30 +1,66 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<p align="center">
+   <img src="./.github/images/homepage.png" width="1000"/>
+</p>
 
-## Getting Started
+# Portfolio
 
-First, run the development server:
+[![Open Source Love](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/imkousik9)
+
+My portfolio built with Next.js and ContentfulCMS
+
+## Application Links
+
+Frontend Code -> [https://github.com/imkousik9/kousikmanna](https://github.com/imkousik9/kousikmanna)
+<br>
+Deployed URL -> [https://kousikmanna.vercel.app/](https://kousikmanna.vercel.app/)
+<br>
+
+**Run the site locally**
+
+### Step 1: Clone The Repo
+
+Fork the repository. then clone the repo locally by doing -
 
 ```bash
-npm run dev
-# or
-yarn dev
+git clone https://github.com/imkousik9/tour-app.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Step 2: Install Dependencies
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+cd into the directory
 
-## Learn More
+```bash
+cd kousikmanna
+```
 
-To learn more about Next.js, take a look at the following resources:
+install all the dependencies
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+yarn
+# or
+npm install
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Step 3: Start Development Server
 
-## Deploy on Vercel
+Then start the development Server
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```bash
+yarn dev
+# or
+npm run dev
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+After running the development server the site should be running on https://localhost:3000
+
+## Tech Stack
+
+<b>Frontend</b>: Reactjs, Nextjs, Typescript
+<br>
+<b>Styling</b>: CSS
+<br>
+<b>Content Management System</b>: ContentfulCMS
+<br>
+<b>Integrations</b>: GraphQL(ContentfulCMS)
+<br>
+<b>Deployment</b>: Vercel
