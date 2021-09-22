@@ -22,7 +22,7 @@ Deployed URL -> [https://kousikmanna.vercel.app/](https://kousikmanna.vercel.app
 Fork the repository. then clone the repo locally by doing -
 
 ```bash
-git clone https://github.com/imkousik9/tour-app.git
+git clone https://github.com/imkousik9/kousikmanna.git
 ```
 
 ### Step 2: Install Dependencies
