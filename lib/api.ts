@@ -10,6 +10,7 @@ const query = `query {
           image {
             url
           }
+          description
       }
     }
   }`;
@@ -24,6 +25,7 @@ export type Items = {
   image: {
     url: string;
   };
+  description: string;
 };
 
 export type Project = {
