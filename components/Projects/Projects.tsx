@@ -19,6 +19,7 @@ function Projects({ projects }: ProjectsListProps) {
               image={project.image.url}
               url={project.url}
               githubRepo={project.gitHubRepository}
+              description={project.description}
             />
           );
         })}
