@@ -7,7 +7,7 @@
 .contact > h2 {
   margin: 100px auto;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 00;
   color: var(--primaryColor);
   text-align: center;
   letter-spacing: 1px;
@@ -26,7 +26,7 @@
 .contact__from {
   width: 100%;
   padding: 30px 30px;
-  background: var(--secondaryColor);
+  background: var(--bg);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   border-radius: 10px;
   height: 450px;
@@ -40,7 +40,7 @@
 }
 .contact__from label span {
   font-size: 0.85em;
-  color: #252525;
+  color: var(--primaryBlack);
 }
 
 .contact__from .label__email {

@@ -7,8 +7,8 @@ function Home() {
       <div className={style.home__intro}>
         <div className={style.home__text}>
           <p>Hello, I’m</p>
-          <h1>KOUSIK MANNA</h1>
-          <p className={style.home__adjust}>FULL-STACK WEB DEVELOPER</p>
+          <h1>Kousik Manna</h1>
+          <p>FULL-STACK WEB DEVELOPER</p>
 
           <div className="home__CTA">
             <div className="home__social"></div>

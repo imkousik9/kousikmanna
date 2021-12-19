@@ -12,6 +12,11 @@ class MyDocument extends Document {
             content="/favicons/browserconfig.xml"
             name="msapplication-config"
           />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap"
+            rel="stylesheet"
+          />
           <link href="/favicons/favicon.ico" rel="icon" />
           <link href="/favicons/site.webmanifest" rel="manifest" />
           <link
