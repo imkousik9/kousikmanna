@@ -1,13 +1,9 @@
 :root {
-  --bg: #f8f8f8;
+  --bg: #ffffff;
   --primaryColor: #6d83f2;
-  --secondaryColor: #f8f8f8;
   --accentColor: #c7d0ff;
-  --primaryBlack: #383838;
-  --primaryText: #383838;
-
-  --fontFamily: 'Montserrat', sans-serif;
-  --secondaryFontFamily: 'Karla', sans-serif;
+  --primaryBlack: #111827;
+  --primaryText: #1f2937;
 
   --gradient: linear-gradient(134deg, #6a98f0 0%, #4961dc 99%);
   --gradient2: linear-gradient(99deg, #6a98f0 0%, #4961dc 130%);
@@ -22,16 +18,12 @@ body,
 html {
   height: 100%;
 
-  font-size: calc(12px + 0.4vw);
-  font-family: var(--fontFamily);
-  -webkit-font-smoothing: antialiased;
-  font-display: fallback !important;
+  font-family: 'Inter', sans-serif;
   scrollbar-color: var(--primaryColor) white;
   scrollbar-width: thin;
 }
 
 body {
-  /* overflow hidden for SmallProject's 100vw width div */
   overflow-x: hidden;
   background-color: var(--bg);
   color: var(--primaryText);
@@ -46,11 +38,7 @@ a:hover {
 }
 
 h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h2 {
   margin: 10px 0;
   line-height: 140%;
   color: var(--primaryText);
@@ -60,7 +48,6 @@ p {
   font-size: 16px;
   margin: 0;
   line-height: 150%;
-  font-family: var(--secondaryFontFamily);
   color: var(--primaryText);
 }
 

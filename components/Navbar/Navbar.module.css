@@ -8,7 +8,7 @@
   height: 60px;
   width: 100vw;
 
-  background-color: #f8f8f8;
+  background-color: var(--bg);
   box-shadow: rgba(0, 0, 0, 0.05) 0px 5px 10px;
   z-index: 1000;
 }
@@ -25,7 +25,8 @@
   padding: 0;
   list-style: none;
   display: flex;
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 500;
   align-items: center;
   transition: 0.2s;
 }
@@ -38,7 +39,7 @@
 
 .navbar__item > a {
   color: #6d83f2;
-  text-transform: uppercase;
+  text-transform: capitalize;
 }
 .navbar__item > a:hover {
   cursor: pointer;

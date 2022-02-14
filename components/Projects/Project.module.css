@@ -25,10 +25,9 @@
 
 .project__name {
   margin-bottom: 5px;
-  font-family: var(--fontFamily);
   text-transform: capitalize;
-  font-weight: 900;
-  font-size: 18px;
+  font-weight: 500;
+  font-size: 1.2rem;
   color: var(--primaryColor);
 }
 
@@ -39,7 +38,6 @@
 }
 
 .project__description {
-  font-family: var(--fontFamily);
-  font-size: 14px;
-  color: #4b5156;
+  font-size: 1rem;
+  color: var(--primaryText);
 }

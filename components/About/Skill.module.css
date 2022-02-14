@@ -1,7 +1,7 @@
 .skill > h2 {
   margin: 100px auto;
   font-size: 1.5rem;
-  font-weight: 900;
+  font-weight: 700;
   color: var(--primaryColor);
   text-align: center;
   letter-spacing: 1px;
@@ -24,6 +24,13 @@
   color: var(--primaryColor);
   font-size: 5rem;
   padding: 20px 70px;
+}
+
+@media only screen and (max-width: 720px) {
+  .skill__icons,
+  .skill__icon {
+    font-size: 3rem;
+  }
 }
 
 .skill__icon > svg {
