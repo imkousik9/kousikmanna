@@ -13,8 +13,7 @@ export const getStaticProps = async () => {
   return {
     props: {
       projects: projects.data.projectsCollection.items
-    },
-    revalidate: 200
+    }
   };
 };
 

@@ -36,8 +36,22 @@ export type Project = {
   };
 };
 
+// export const fetchProjects = async () => {
+//   return (await fetch(
+//     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
+//     {
+//       method: 'POST',
+//       headers: {
+//         'Content-Type': 'application/json',
+//         Authorization: `Bearer ${process.env.CONTENTFUL_ACCESS_TOKEN}`
+//       },
+//       body: JSON.stringify({ query })
+//     }
+//   ).then((response) => response.json())) as Project;
+// };
+
 export const fetchProjects = async () => {
-  return (await fetch(
+  const res = await fetch(
     `https://graphql.contentful.com/content/v1/spaces/${process.env.CONTENTFUL_SPACE_ID}`,
     {
       method: 'POST',
@@ -47,5 +61,13 @@ export const fetchProjects = async () => {
       },
       body: JSON.stringify({ query })
     }
-  ).then((response) => response.json())) as Project;
+  );
+
+  const projects = (await res.json()) as Project;
+
+  if (!res.ok) {
+    throw new Error(`Failed to fetch posts, received status ${res.status}`);
+  }
+
+  return projects;
 };
